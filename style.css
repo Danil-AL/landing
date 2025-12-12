@@ -1078,5 +1078,126 @@ p {
 }
 
 .request-call:hover {
-  background-color: #e68a00; /* Тёмнее при наведении */
+  background-color: #e68a00; 
 }
+
+/* Для мобильных устройств (ширина экрана ≤ 480px) */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column; /* Шапка сайта — вертикально */
+    padding: 20px; /* Уменьшаем отступы */
+  }
+  .header__nav {
+    order: 2; /* Меню навигации ниже логотипа */
+    padding-right: 0;
+  }
+  .header__menu {
+    flex-direction: column; /* Пункты меню — вертикально */
+    align-items: center;
+  }
+  .header__link {
+    margin: 5px 0; /* Отступы между пунктами меню */
+  }
+  .header__contacts {
+    order: 3; /* Контакты — в самом низу шапки */
+    margin-top: 10px;
+  }
+  .main-block {
+    padding: 50px 20px; /* Уменьшаем отступы для контента */
+  }
+  .main-block__title {
+    font-size: 32px; /* Уменьшаем размер шрифта заголовка */
+  }
+  .main-block__text {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .completed-projects__content {
+    flex-direction: column; 
+  }
+  .completed-projects__text-block {
+    width: 100%; 
+    padding-right: 0;
+  }
+  .completed-projects__image {
+    width: 100%; 
+  }
+  .repair-cards {
+    flex-direction: column; /* Карточки ремонта — вертикально */
+    gap: 20px;
+  }
+  .request__form {
+    flex-direction: column; /* Форма — вертикально */
+    align-items: stretch;
+  }
+  .clients-block .client-card {
+    margin-bottom: 20px; 
+  }
+}
+
+/* Для планшетов (ширина экрана от 481px до 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .header {
+    padding: 30px;
+  }
+  .main-block {
+    padding: 100px 30px;
+  }
+  .main-block__title {
+    font-size: 36px;
+  }
+  .main-block__text {
+    font-size: 20px;
+  }
+  .repair-cards {
+    gap: 15px;
+  }
+}
+
+/* Для ноутбуков и десктопов (ширина экрана от 769px до 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    padding: 40px 30px;
+  }
+  .main-block {
+    padding: 150px 50px;
+  }
+  .completed-projects__text-block {
+    width: 50%;
+  }
+  .repair-cards {
+    gap: 25px;
+  }
+}
+
+/* Для больших экранов (ширина экрана > 1024px) */
+@media (min-width: 1025px) {
+  .header {
+    padding: 37px 90px 36px 92px; /* Возвращаем исходные отступы */
+  }
+  .main-block {
+    padding: 194px 629px 208px 134px;
+  }
+  .completed-projects__text-block {
+    width: 49%;
+    padding-right: 20px;
+  }
+  .completed-projects__image {
+    width: 680px;
+  }
+}
+
+/* Общие правила для всех экранов */
+@media (max-width: 600px) {
+  h2, h3 {
+    font-size: 24px; /* Уменьшаем заголовки */
+  }
+  p {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+}
+
