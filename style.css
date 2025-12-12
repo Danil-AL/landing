@@ -1081,61 +1081,79 @@ p {
   background-color: #e68a00; 
 }
 
-/* Для мобильных устройств (ширина экрана ≤ 480px) */
+/* === АДАПТИВНЫЕ МЕДИАЗАПРОСЫ  === */
+
+/* Мобильные устройства (до 480px) */
 @media (max-width: 480px) {
   .header {
-    flex-direction: column; /* Шапка сайта — вертикально */
-    padding: 20px; /* Уменьшаем отступы */
+    flex-direction: column;
+    padding: 20px;
   }
   .header__nav {
-    order: 2; /* Меню навигации ниже логотипа */
+    order: 2;
     padding-right: 0;
   }
   .header__menu {
-    flex-direction: column; /* Пункты меню — вертикально */
+    flex-direction: column;
     align-items: center;
   }
   .header__link {
-    margin: 5px 0; /* Отступы между пунктами меню */
+    margin: 5px 0;
   }
   .header__contacts {
-    order: 3; /* Контакты — в самом низу шапки */
+    order: 3;
     margin-top: 10px;
   }
+
   .main-block {
-    padding: 50px 20px; /* Уменьшаем отступы для контента */
+    padding: 50px 20px;
   }
   .main-block__title {
-    font-size: 32px; /* Уменьшаем размер шрифта заголовка */
+    font-size: 32px;
   }
   .main-block__text {
     font-size: 18px;
     margin-bottom: 20px;
   }
+
   .completed-projects__content {
-    flex-direction: column; 
+    flex-direction: column;
   }
   .completed-projects__text-block {
-    width: 100%; 
+    width: 100%;
     padding-right: 0;
   }
   .completed-projects__image {
-    width: 100%; 
+    width: 100%;
   }
+
   .repair-cards {
-    flex-direction: column; /* Карточки ремонта — вертикально */
+    flex-direction: column;
     gap: 20px;
   }
+
   .request__form {
-    flex-direction: column; /* Форма — вертикально */
+    flex-direction: column;
     align-items: stretch;
   }
+
   .clients-block .client-card {
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+  }
+
+  h2, h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 10px;
+    padding: 10px 15px;
   }
 }
 
-/* Для планшетов (ширина экрана от 481px до 768px) */
+/* Планшеты (от 481px до 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
   .header {
     padding: 30px;
@@ -1154,7 +1172,7 @@ p {
   }
 }
 
-/* Для ноутбуков и десктопов (ширина экрана от 769px до 1024px) */
+/* Ноутбуки (от 769px до 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .header {
     padding: 40px 30px;
@@ -1170,13 +1188,24 @@ p {
   }
 }
 
-/* Для больших экранов (ширина экрана > 1024px) */
+/* Десктопы (от 1025px и выше) — сброс адаптивных стилей */
 @media (min-width: 1025px) {
   .header {
-    padding: 37px 90px 36px 92px; /* Возвращаем исходные отступы */
+    flex-direction: row;
+    padding: 37px 90px 36px 92px;
+  }
+  .header__nav {
+    order: initial;
+  }
+  .header__contacts {
+    order: initial;
+    margin-top: 0;
   }
   .main-block {
     padding: 194px 629px 208px 134px;
+  }
+  .main-block__title {
+    font-size: 40px;
   }
   .completed-projects__text-block {
     width: 49%;
@@ -1185,19 +1214,12 @@ p {
   .completed-projects__image {
     width: 680px;
   }
-}
-
-/* Общие правила для всех экранов */
-@media (max-width: 600px) {
-  h2, h3 {
-    font-size: 24px; /* Уменьшаем заголовки */
+  .repair-cards {
+    flex-direction: row;
   }
-  p {
-    font-size: 16px;
-  }
-  .btn {
-    font-size: 10px;
-    padding: 10px 15px;
+  .request__form {
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 
