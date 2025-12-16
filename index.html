@@ -41,7 +41,6 @@
 <!--      =====MAIN SECTION=====      -->
 
 <section class="main-block">
-  <div class="main-block__overlay"></div>
     <div class="container">
       <h1 class="main-block__title">
         TURNKEY REPAIR IN THE<br>CITY OF <span class="main-title">ROSTOV-ON-DON</span>
@@ -128,7 +127,6 @@
   </div>
 
     <div class="video-container">
-      <div class="video-container__overlay"></div>
       <img src="img/onlinecontrole.png" alt="Видео с объекта" />
       <button class="play-button"><img src="img/videoarrow.svg" alt=""></button>
    </div>
@@ -157,11 +155,16 @@
     <div class="checkbox-group">
     </div>
 
-    <button type="submit" class="submit-button">SUBMIT</button><br>
-  </form>
 
+    <button type="submit" class="submit-button">SUBMIT</button><br>
+
+    <div class="checkbox-wrapper">
     <input type="checkbox" id="agree" name="agree" required />
     <label for="agree">I agree to the processing of personal data</label>
+    </div>
+  </form>
+
+    
 </section>
 
 
@@ -306,10 +309,10 @@
 
   <!-- Правая часть: галерея изображений -->
   <div class="image-gallery">
-    <img src="img/styleclock.png" alt="Classic interior" class="gallery-image">
-    <img src="img/stylebadroom.png" alt="Luxury living room" class="gallery-image">
-    <img src="img/styleroom.png" alt="Patterned wallpaper" class="gallery-image">
-    <img src="img/styledesk.png" alt="Modern living room" class="gallery-image">
+    <img src="img/styleclock.png" alt="Classic interior" class="gallery-image image1 first-mobile">
+    <img src="img/stylebadroom.png" alt="Luxury living room" class="gallery-image image2">
+    <img src="img/styleroom.png" alt="Patterned wallpaper" class="gallery-image image3">
+    <img src="img/styledesk.png" alt="Modern living room" class="gallery-image image4">
   </div>
 </div>
 
@@ -409,19 +412,21 @@
 </form>
 
 <!--          =====CART=====          -->
-
+  <div class="contacts-wrapper">
     <div class="title__cart">
       <h3>Rostov-on-Don, Nansen St., 239 Shopping Center <br>
         Decorum Tel +7 (928) 768 32 29</h3>
     </div>
 
     <div class="logo-msg">
-      <img src="img/msg.svg" alt="">
-      <img src="img/msginst.svg" alt="">
+      <img src="img/msg.svg" alt="whatsapp">
+      <img src="img/msginst.svg" alt="inst">
     </div>
-    <div class="img-cart">
+
+      <div class="img-cart">
       <img src="img/cart.png" alt="">
-    </div>
+      </div>
+   </div> 
 </div>
 
 <!--          =====FOOTER=====          -->
