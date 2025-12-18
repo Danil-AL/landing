@@ -1547,12 +1547,12 @@ p {
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s;
   }
 
   .mobile-arrow img {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
+    padding: 10px;
   }
   .completed-projects__image {
   position: relative;
