@@ -1526,7 +1526,7 @@ p {
     display: block;
     pointer-events: auto;
     position: absolute;
-    bottom: -50%;
+    top: 50%;
     left: 30px;
     right: 30px;
     transform: translateY(-50%);
