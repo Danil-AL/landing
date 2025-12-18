@@ -221,6 +221,7 @@ img {
   height: auto;
   display: flex;
   justify-content: end;
+  position: relative;
 }
 
 .completed-projects__image img {
@@ -301,6 +302,73 @@ p {
   margin-right: 29px;
 }
 
+.mobile-arrows {
+  display: none;
+}
+/* SLIDER*/
+.completed-projects__image {
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+
+  .slide-img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 10px;
+  }
+
+  .slide-img.active {
+    display: block;
+  }
+
+  .completed-projects__vector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .arrow {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+  }
+
+  .arrow:hover {
+    opacity: 0.7;
+  }
+
+  .circle {
+    display: flex;
+    gap: 15px;
+  }
+
+  .competed__circle {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .competed__circle.active {
+    background-color: #ffffff;
+  }
+
+  .competed__circle:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .nav-item.active {
+    color: #e3b873; 
+    border-bottom: 3px solid #e3b873;
+    padding-bottom: 10px;
+  }
 
 /*  ONLINE CONTROLE */
 
@@ -1169,7 +1237,7 @@ p {
     color: #ddd !important;
     text-align: center !important;
   }
-  .completed-projects__image {
+  .completed-projects__image {  
     width: 100% !important;
     max-width: 320px !important;
     margin: 0 auto !important;
@@ -1450,6 +1518,52 @@ p {
   .btn {
     font-size: 10px;
     padding: 10px 15px;
+  }
+
+  /* SLIDERMOBILE*/
+
+.mobile-arrows {
+    display: block;
+    pointer-events: auto;
+    position: absolute;
+    bottom: -50%;
+    left: 30px;
+    right: 30px;
+    transform: translateY(-50%);
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+
+  .mobile-arrow {
+    width: 36px;
+    height:36px;
+    background: rgba(227, 184, 115, 1);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+  }
+
+  .mobile-arrow img {
+    width: 20px;
+    height: 20px;
+  }
+  .completed-projects__image {
+  position: relative;
+  margin-top: 30px;
+}
+.completed-projects__content {
+    flex-direction: column;
+  }
+
+  .completed-projects__text-block {
+    margin-bottom: 20px;
   }
 }
 

@@ -59,12 +59,11 @@
 <!--      =====Completed Project=====  -->
 
 <section class="completed-projects">
-
   <div class="completed-projects__header">
     <nav class="completed-projects__nav">
-      <a href="#" class="nav-item active">ROSTOV-ON-DON, ADMIRAL</a>
-      <a href="#" class="nav-item">SOCHI THIEVES</a>
-      <a href="#" class="nav-item">ROSTOV-ON-DON PATRIOTIC</a>
+      <a href="#" class="nav-item active" data-slide="0">ROSTOV-ON-DON, ADMIRAL</a>
+      <a href="#" class="nav-item" data-slide="1">SOCHI THIEVES</a>
+      <a href="#" class="nav-item" data-slide="2">ROSTOV-ON-DON PATRIOTIC</a>
     </nav>
   </div>
 
@@ -73,44 +72,52 @@
       <h2>COMPLETED <br>PROJECTS</h2>
       <p>Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction<br>
         market we have made happy more than 1000 families</p>
+
       <div class="info-grid">
         <div class="info-item">
           <span class="label">CITY:</span><br>
-          <span class="value">Rostov-on-Don <br> LCD admiral</span>
+          <span class="value city-value">Rostov-on-Don<br>LCD admiral</span>
         </div>
         <div class="info-item">
           <span class="label">APARTMENT AREA:</span><br>
-          <span class="value">81 m²</span>
+          <span class="value area-value">81 m²</span>
         </div>
-
         <div class="info-item">
           <span class="label">REPAIR TIME:</span><br>
-          <span class="value">3.5 months</span>
+          <span class="value time-value">3.5 months</span>
         </div>
-
         <div class="info-item">
           <span class="label">REPAIR COST:</span><br>
-          <span class="value">Upon request</span>
+          <span class="value cost-value">Upon request</span>
         </div>
-
-            <div class="completed-projects__vector">
-                <img src="img/arrowleft.svg" alt="arrowleft">
-                <div class="circle">
-                    <div class="competed__circle active"></div>
-                    <div class="competed__circle"></div>
-                    <div class="competed__circle"></div>
-                </div>
-                <img src="img/arrowright.png" alt="">
-            </div>
-
       </div>
 
+      <div class="completed-projects__vector">
+        <img src="img/arrowleft.svg" alt="Previous" class="arrow arrow-left">
+        <div class="circle">
+          <div class="competed__circle active" data-slide="0"></div>
+          <div class="competed__circle" data-slide="1"></div>
+          <div class="competed__circle" data-slide="2"></div>
+        </div>
+        <img src="img/arrowright.svg" alt="Next" class="arrow arrow-right">
+      </div>
     </div>
 
     <div class="completed-projects__image">
-      <img src="img/completed.png" alt="Completed project example" />
+      <img src="img/completed.png" alt="Rostov-on-Don Admiral" class="slide-img active">
+      <img src="img/completed2.png" alt="Sochi Thieves" class="slide-img">
+      <img src="img/completed3.png" alt="Rostov-on-Don Patriotic" class="slide-img">
     </div>
+  </div>
 
+  <!--MOBILE SLIDER-->
+  <div class="mobile-arrows">
+    <button class="mobile-arrow mobile-arrow-left">
+      <img src="img/leftmobile.svg" alt="Previous">
+    </button>
+    <button class="mobile-arrow mobile-arrow-right">
+      <img src="img/rightmobile.svg" alt="Next">
+    </button>
   </div>
 </section>
 
@@ -451,6 +458,6 @@
   </div>
 </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>
